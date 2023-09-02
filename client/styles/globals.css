@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Add this CSS in your stylesheet */
+.resizable-input {
+  resize: both;
+  overflow: auto;
+}
+
+.resizable-input::after {
+  content: '';
+  display: block;
+  width: 10px; /* Set the desired width for the resize handle */
+  height: 10px; /* Set the desired height for the resize handle */
+  position: absolute;
+  bottom: 3px; /* Adjust the position as needed */
+  right: 3px; /* Adjust the position as needed */
+  cursor: nwse-resize; /* Set the resize cursor */
+  background: #000; /* Set the color of the resize handle */
+}
