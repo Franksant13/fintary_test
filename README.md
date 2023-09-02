@@ -69,6 +69,8 @@ in the root directory of the project
 
 ## Getting Started
 
+Clone this repository on your local env.
+
 To install the backend dependencies, in the root directory of the project run
 >npm install
 
