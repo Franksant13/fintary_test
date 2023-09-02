@@ -82,6 +82,7 @@ To run the backend unit tests, in the root directory of the project run
 
 To run the entire project, in the root directory run
 >npm start
+
 That will start in a single console both backend and frontend
 The frontend will run on port 3000 and the backend on port 5000.
 
